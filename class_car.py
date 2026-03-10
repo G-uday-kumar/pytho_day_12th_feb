@@ -1,13 +1,12 @@
 class Car:
-    def __init__(self, brand, color):
-        self.brand = brand
-        self.color = color
+    def __init__(self,brand,model,price):
+        self.brand=brand
+        self.model=model
+        self.price=price
+    def display(self):
+        print("Brand: ",self.brand)
+        print("Model: ",self.model)
+        print("Price: ",self.price)
+c=Car("Toyota","Fortuner",4500000)
+c.display()
 
-    def start(self):
-        print(self.brand, "car has started")
-
-    def stop(self):
-        print(self.brand, "car has stopped")
-car1 = Car("Toyota", "Red")
-car1.start()
-car1.stop()
